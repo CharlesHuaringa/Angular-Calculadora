@@ -1,0 +1,47 @@
+<div class="contenedor">
+
+
+
+    <div class="parte-contenedor">
+        <img class="carro-compras" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACP0lEQVR4nL2WzW9MURiHr0pQInZWNrqz4A+giIXEVohEYikhdlImbBAhqOLPQNhIpFWlKSHVja92WqMxk7YzZu5MF60OZnR6H3lvb5ub6vm4122f5CQnJ+e8v3vPx/v+HMcCYC2wD7gD9AMu8CdobjDWAeyVuTYxtQDNwAWgjD3yISlZG1f0GJAnPuPA0SiCa4ArgMf/IzFuAk0m0SbgIcnzQCsO3GDluKY7U5/szzonPkz47dH3qaSEPeDIcrdXLoNP7te88KGBHOs7h8hUa0mJ54GNYeGLy82a82Dbyy+0f6uQIKlwclC+05Of8hzozyYpXPKTDLBfN+txcZrmrjTH349Hbk/dH6qwrSJ8Vyc8NdtgU1eadZ1DkVtqpKgKe1uE35n25uBALpZwd3lGFfKtY5OH72UnI4tufpam2phThSyJcN0kLM8pqrA8RQ01K2FhR9/XSMId+idYs9pq4Wy6GEn44/RvXbiSExRxI32TVWvR7b0ZU2l74wTOwYgEahsusqV7WCva0pvheUV5mxe45QR2ZbXZvZAyxa4YaXgelzIulzOu3w8jFe3U5wJPSspsFU6Z87U58EhGeiozi1v6Ysl2nh4s+ONbe0ZMYdrC1WkDMGZaUa7PsvPVKLtej/r9MPKnInpmsKALMfGPCRRjlpDPUuEBh1Uu5PoKCl81mT0xZklz38Zprr69DSPGLOzDYjCmPFPHQHDbzwdvzxaZe07WxhJd8gFy9q3iHKSIB8GlqkmTvoy1A3tst/Uv0BTZfoVUYs8AAAAASUVORK5CYII=">
+        
+
+      <div class="letras-contenedor">
+        <div class="titulo">Add expense to</div>
+        <div class="titulo2">Groceries</div>
+      </div>
+  
+    </div>
+    
+    
+    <input type="text" class="respuesta" value="{{ resp }}" disabled/>
+
+  
+    <div class="calculadora-keys">
+
+
+      
+      <button type="button" class="" value="÷" (click)="agregar('÷')">÷</button>
+      <button type="button" value="1" class="boton" (click)="agregar('1')">1</button>
+      <button type="button" value="2"  class="boton"  (click)="agregar('2')">2</button>
+      <button type="button" value="3"  class="boton" (click)="agregar('3')">3</button>
+      <button type="button" class="boton" value="all-clear" (click)="borrar_datos()">⌫</button>
+  
+      <button type="button" class="" value="" (click)="agregar('x')">x</button>
+      <button type="button" value="4"  class="boton"  (click)="agregar('4')">4</button>
+      <button type="button" value="5"  class="boton" (click)="agregar('5')">5</button>
+      <button type="button" value="6"  class="boton"  (click)="agregar('6')">6</button>
+      <button type="button" class="boton" value="all-clear" (click)="borrar_todo()">c</button>
+   
+       <button type="button" class="" value="-" (click)="agregar('-')">-</button>
+      <button type="button" value="7"  class="boton"  (click)="agregar('7')">7</button>
+      <button type="button" value="8"  class="boton"  (click)="agregar('8')">8</button>
+      <button type="button" value="9"  class="boton" (click)="agregar('9')">9</button>
+      <button type="button" class="signo-igual" value="=" (click)="agregar('=')">=</button>
+      
+      <button type="button" class="" value="+" (click)="agregar('+')">+</button>
+      <button type="button" value="0"  class="boton"  (click)="agregar('')"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nGNgQALW1tb/QRhZjCh5a6gEqXg4GsBAJBhiBlhj8fMQMwAboJ0B1gOWEikBALdg2bFEc4nNAAAAAElFTkSuQmCC"></button>
+      <button type="button" value="0"  class="boton" (click)="agregar('0')">0</button>
+      <button type="button" value="."  class="boton"  (click)="agregar('.')">.</button>
+      
+    </div>
