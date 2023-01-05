@@ -9,4 +9,6 @@ Integrantes:
 
 -Renzo Fabrizio Galindo
 
+-Rodrigo Franko Vazquez
+
 
